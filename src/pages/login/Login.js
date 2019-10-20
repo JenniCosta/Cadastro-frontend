@@ -25,6 +25,7 @@ const Login = () => {
     })
     return (
         <>
+            <div className="Login">
             <h1>Login</h1>
             <p>Fill the fields to continue</p>
             <Formik
@@ -32,7 +33,7 @@ const Login = () => {
                 onSubmit={handleSubmit}
                 validationSchema={validations}
             >
-                <Form className="Login">
+                <Form>
                     <div className="Login-Group">
                         <Field
                             name="email"
@@ -58,6 +59,7 @@ const Login = () => {
                     <button className="Login-Btn" type="submit">Login</button>
                 </Form>
             </Formik>
+            </div>
         </>
     )
 }
