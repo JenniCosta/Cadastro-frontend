@@ -6,7 +6,6 @@
     padding: 1rem;
     font-size: 1.2rem;
     border-radius: 7px;
-    width: 100%;
     transition: all .1s linear;
 } 
 .Login-Field:focus {
@@ -16,10 +15,12 @@
 .Login{
     /* background: url(../../images/Simbolo\ -\ Dataner.png); */
     background-color: rgb(207, 204, 204);
-    width: 300px;
+    width: 383px;
+    height: 411;
     border: 5px;
     border-radius: 10px;
-    padding: 50px;
+    margin-top: 4rem;
+    /* padding: 10px; */
     margin: 20px; 
 }
 
@@ -28,11 +29,12 @@
 }
 
 .Login-Btn {
-    background: #31BEDE;
+    background: #3162DE;
     color: #fdfdfd;
     padding: .5rem 2rem;
-    border: 2px solid #ffC002 ;
-    border-radius: 5px ;
+    width: 383px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
     margin-top: 2rem;
 }
 

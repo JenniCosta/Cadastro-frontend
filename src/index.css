@@ -1,14 +1,14 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    /* background: #7159c1; */
-    background-image: url(images/fundo.jpg);
-    opacity: 50;
+    background-image: url(../src/images/fundo.jpg);
+    background-attachment: scroll;
     background-repeat: no-repeat;
     /* background-position: right top; */
      background-attachment: scroll; 
      background-size: 100%;
     color: black;
 }
+
 /* .root{
     background-color: lightgrey;
     width: 300px;

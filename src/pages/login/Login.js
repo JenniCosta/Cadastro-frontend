@@ -26,8 +26,7 @@ const Login = () => {
     return (
         <>
             <div className="Login">
-            <h1>Login</h1>
-            <p>Fill the fields to continue</p>
+            <p>Insira suas informaçõ</p>
             <Formik
                 initialValues={{}}
                 onSubmit={handleSubmit}
