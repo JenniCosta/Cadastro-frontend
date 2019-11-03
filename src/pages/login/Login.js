@@ -5,8 +5,8 @@ import { TextField, Grid, Paper, FormControlLabel, Button, Link, Container, CssB
 import * as yup from 'yup'
 import axios from 'axios'
 import { history } from '../../history'
-import Visibility from '@material-ui/icons/Visibility';
-import VisibilityOff from '@material-ui/icons/VisibilityOff';
+// import Visibility from '@material-ui/icons/Visibility';
+// import VisibilityOff from '@material-ui/icons/VisibilityOff';
 
 import Logo from '../../images/logo.png'
 import Fundo from './../../images/fundo.jpg'
