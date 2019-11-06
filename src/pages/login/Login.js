@@ -104,15 +104,7 @@ const Login = () => {
             control={<Checkbox value="remember" color="primary" />}
             label="Remember me"
           />
-          <Button 
-            type="submit"
-            fullWidth
-            variant="contained"
-            color="primary"
-            className={`${classes.submit} botao`}
-          >
-            Sign In
-          </Button>
+          
           <Grid container>
             <Grid item xs>
               {/* <Link href="#" variant="body2">
@@ -134,6 +126,15 @@ const Login = () => {
                 </Form>
             </Formik>
             </Grid>
+            <Button 
+            type="submit"
+            fullWidth
+            variant="contained"
+            color="primary"
+            className={`${classes.submit} botao`}
+          >
+            Sign In >
+          </Button>
             </div>
         </div>
         </div>

@@ -1,9 +1,9 @@
 import React from 'react'
-import Navbar from './../../components/navbar'
+import Appbar from './../../components/Appbar'
 
 const Home = () => {
     
-        return <Navbar />;
+        return <Appbar />;
         ;
 }
 
