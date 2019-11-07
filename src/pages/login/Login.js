@@ -66,7 +66,7 @@ const Login = () => {
     <Container component="main" maxWidth="xs">
       <CssBaseline />
       <div className={classes.paper}>
-        <Typography component="h1" variant="h5" style={{size: '5px'}}>
+        <Typography component="h1" variant="h5" style={{size: '5px', alignText: 'center'}}>
           Insira suas informações 
         </Typography>
         <form className={classes.form} noValidate>

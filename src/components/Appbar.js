@@ -14,7 +14,14 @@ import AccountCircle from '@material-ui/icons/AccountCircle';
 import MailIcon from '@material-ui/icons/Mail';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
-import NotificationsIcon from '@material-ui/icons/Notifications';
+// import NotificationsIcon from '@material-ui/icons/Notifications';
+import ViewListIcon from '@material-ui/icons/ViewList';
+import ExitToAppSharpIcon from '@material-ui/icons/ExitToAppSharp';
+import SettingsSharpIcon from '@material-ui/icons/SettingsSharp';
+import InsertChartIcon from '@material-ui/icons/InsertChart';
+import DeviceHubIcon from '@material-ui/icons/DeviceHub';
+import BusinessIcon from '@material-ui/icons/Business';
+import PersonIcon from '@material-ui/icons/Person';
 import MoreIcon from '@material-ui/icons/MoreVert';
 import { useTheme } from '@material-ui/core/styles';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
@@ -211,10 +218,10 @@ export default function PrimarySearchAppBar() {
       <MenuItem>
         <IconButton aria-label="show 11 new notifications" color="inherit">
           <Badge badgeContent={11} color="secondary">
-            <NotificationsIcon />
+            <SettingsSharpIcon />
           </Badge>
         </IconButton>
-        <p>Notificcações</p>
+        <p>Configurações</p>
       </MenuItem>
       <MenuItem onClick={handleProfileMenuOpen}>
         <IconButton
@@ -266,13 +273,13 @@ export default function PrimarySearchAppBar() {
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
             <IconButton aria-label="show 4 new mails" color="inherit">
-              <Badge badgeContent={4} color="secondary">
-                <MailIcon />
+              <Badge >
+                <ExitToAppSharpIcon />
               </Badge>
             </IconButton>
             <IconButton aria-label="show 17 new notifications" color="inherit">
-              <Badge badgeContent={17} color="secondary">
-                <NotificationsIcon />
+              <Badge >
+                <SettingsSharpIcon />
               </Badge>
             </IconButton>
             <IconButton
@@ -315,18 +322,18 @@ export default function PrimarySearchAppBar() {
         </div>
         <Divider />
         <List>
-          {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
+          {['Usuários e Permissões', 'Propriedades', 'Andar'].map((text, index) => (
             <ListItem button key={text}>
-              <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
+              <ListItemIcon>{index % 3 === 0 ? <PersonIcon /> : <BusinessIcon /> }</ListItemIcon>
               <ListItemText primary={text} />
             </ListItem>
           ))}
         </List>
         <Divider />
         <List>
-          {['All mail', 'Trash', 'Spam'].map((text, index) => (
+          {['Devices', 'Dashboards'].map((text, index) => (
             <ListItem button key={text}>
-              <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
+              <ListItemIcon>{index % 2 === 0 ? <DeviceHubIcon /> : <InsertChartIcon />}</ListItemIcon>
               <ListItemText primary={text} />
             </ListItem>
           ))}
